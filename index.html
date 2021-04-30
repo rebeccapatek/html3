@@ -42,66 +42,71 @@ Just like table data, a table heading element must be placed within a table row.
   </table>
 
 
-Note that the first row has a blank heading, and a Saturday, Sunday heading.  The blank heading creates the extra table cell necessary to align the able headings correctly over the data that matches up with it. In the second row, the table heading Temperature was added.
+<p>Note that the first row has a blank heading, and a Saturday, Sunday heading.  The blank heading creates the extra table cell necessary to align the able headings correctly over the data that matches up with it. In the second row, the table heading Temperature was added.</p>
 
-Note also the use of the scope attributes. 
-1. row - this value makes it clear that the heading is for a row
-2. col - this value makes it clear that the heading is for a column.
-
-In order to make a table more readable, you should add a border.  The convention now is top do this in CSS.  For example:
-
-table, td {
-  border: 1px solid black;
-}
-would be stored in a style.css document.
-
-Another attribute of the &gt;td&lt; is the colspan. This attribute accepts an integer greater or equal to one to denote the number of columns it spans across. 
-
-You could also assign the rowspan attribute to a &gt;td&lt; with a value greater or equal to the  number or rows that you want the data to cover.
-
-For long tables, you can use the table body element &gt;tbody&lt; to section off all of the table's data, and exclude the table's headings.
-It makes sense to section off the table's column headings using the table head &gt;thead&lt; element as well when you are sectioning off the table' body.
-
-The Table footer element (&gt;tfoot&lt;) is another way to section off a longer table.  Note that the footer element must still contain the table row element and any table data within that row.  Table footers are ofter used to contain sums, differences, and other data results.
-
-Tables by default are very blank.  They have no borders, the font color is black, and the typeface is the same type used for other HTML elements.  
-
-CSS (Cascading Style Sheets) is a language that web developers use to style the HTML content on a web page.  You can use CSS to style tables.  Specifically, it is nice to style the various aspects mentioned above.  Here is an example of the styling you might have for a table:
-
-table, th, td {
-  border: 1px solid black;
-  font-family: Arial, sans-serif;
-  text-align: center;
-} 
+<h4>Note also the use of the scope attributes.</h4>
+  <ol>
+      <li>row - this value makes it clear that the heading is for a row.</li>
+      <li>col - this value makes it clear that the heading is for a column.</li>
+  </ol>
 
 
-How Does the internet work?
+<p>In order to make a table more readable, you should add a border.  The convention now is top do this in CSS.  For example:</p>
 
-You can think of the internet as a network of computers which send and receive information.  Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming info.  
-HTTP stands for Hypertext Transfer Protocol and is used to structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network. Think of HTTP command language that the devices on both sides of the connection must follow in order to communicate.
 
-The transfer of resources happens using TCP (Transmission Control Protocol). In viewing this webpage, TCP manages the channels between your browser and the server. TCP is used to manage many types of internet connections in which one computer or device wants to send something to another.
+<div>table, td {</div>
+  <div>&nbsp;&nbsp;border: 1px solid black;</div>
+<div>}</div>
 
-HTTP & TCP: How it Works
-When you type an address into your browser, you are commanding it to open a TCP channel to the server that responds to that URL (or Uniform Resource Locator). A URL is like your home address or phone number because it describes how to reach you.
+<p>would be stored in a <strong>style.css</strong> document.</p>
 
-In this situation, your computer, which is making the request, is called the client. The URL you are requesting is the address that belongs to the server.
+<p>Another attribute of the &gt;td&lt; is the colspan. This attribute accepts an integer greater or equal to one to denote the number of columns it spans across.</p> 
 
-Once the TCP connection is established, the client sends a HTTP GET request to the server to retrieve the webpage it should display. After the server has sent the response, it closes the TCP connection. If you open the website in your browser again, or if your browser automatically requests something from the server, a new connection is opened which follows the same process described above. GET requests are one kind of HTTP method a client can call. 
+<p>You could also assign the rowspan attribute to a &gt;td&lt; with a value greater or equal to the  number or rows that you want the data to cover.</p>
 
-Let’s explore an example of how GET requests (the most common type of request) are used to help your computer (the client) access resources on the web.
+<p>For long tables, you can use the table body element &gt;tbody&lt; to section off all of the table's data, and exclude the table's headings.
+It makes sense to section off the table's column headings using the table head &gt;thead&lt; element as well when you are sectioning off the table' body.</p>
 
-Suppose you want to check out the latest course offerings from http://codecademy.com. After you type the URL into your browser, your browser will extract the http part and recognize that it is the name of the network protocol to use. Then, it takes the domain name from the URL, in this case “codecademy.com”, and asks the internet Domain Name Server to return an Internet Protocol (IP) address.
+<p>The Table footer element (&gt;tfoot&lt;) is another way to section off a longer table.  Note that the footer element must still contain the table row element and any table data within that row.  Table footers are ofter used to contain sums, differences, and other data results.</p>
 
-Now the client knows the destination’s IP address. It then opens a connection to the server at that address, using the http protocol as specified. It will initiate a GET request to the server which contains the IP address of the host and optionally a data payload. The GET request contains the following text:
+<p>Tables by default are very blank.  They have no borders, the font color is black, and the typeface is the same type used for other HTML elements.</p>    
 
-GET / HTTP/1.1
-Host: www.codecademy.com
+<p><strong>CSS (Cascading Style Sheets)</strong> is a language that web developers use to style the HTML content on a web page.  You can use CSS to style tables.  Specifically, it is nice to style the various aspects mentioned above.  Here is an example of the styling you might have for a table:</p>
 
-What is HTTPS?
-Since your HTTP request can be read by anyone at certain network junctures, it might not be a good idea to deliver information such as your credit card or password using this protocol. Fortunately, many servers support HTTPS, short for HTTP Secure, which allows you to encrypt data that you send and receive.
+<div>table, th, td {</div>
+  <div>&nbsp;&nbsp;border: 1px solid black;</div>
+  <div>&nbsp;&nbsp;font-family: Arial, sans-serif;</div>
+  <div>&nbsp;&nbsp;text-align: center;</div>
+  <div>} </div>
 
-HTTPS is important to use when passing sensitive or personal information to and from websites. However, it is up to the businesses maintaining the servers to set it up. In order to support HTTPS, the business must apply for a certificate from a Certificate Authority.
+
+<h1>How Does the internet work?</h1>
+
+<div>You can think of the internet as a network of computers which send and receive information.  Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming info.  
+HTTP stands for Hypertext Transfer Protocol and is used to structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network. Think of HTTP command language that the devices on both sides of the connection must follow in order to communicate.</div>
+
+<div>The transfer of resources happens using TCP (Transmission Control Protocol). In viewing this webpage, TCP manages the channels between your browser and the server. TCP is used to manage many types of internet connections in which one computer or device wants to send something to another.</div>
+
+<h4>HTTP & TCP: How it Works</h4>
+<div>When you type an address into your browser, you are commanding it to open a TCP channel to the server that responds to that URL (or Uniform Resource Locator). A URL is like your home address or phone number because it describes how to reach you.
+
+<div>In this situation, your computer, which is making the request, is called the client. The URL you are requesting is the address that belongs to the server.</div>
+
+<div>Once the TCP connection is established, the client sends a HTTP GET request to the server to retrieve the webpage it should display. After the server has sent the response, it closes the TCP connection. If you open the website in your browser again, or if your browser automatically requests something from the server, a new connection is opened which follows the same process described above. GET requests are one kind of HTTP method a client can call. </div>
+
+<div>Let’s explore an example of how GET requests (the most common type of request) are used to help your computer (the client) access resources on the web.</div>
+
+<div>Suppose you want to check out the latest course offerings from http://codecademy.com. After you type the URL into your browser, your browser will extract the http part and recognize that it is the name of the network protocol to use. Then, it takes the domain name from the URL, in this case “codecademy.com”, and asks the internet Domain Name Server to return an Internet Protocol (IP) address.</div>
+
+<div>Now the client knows the destination’s IP address. It then opens a connection to the server at that address, using the http protocol as specified. It will initiate a GET request to the server which contains the IP address of the host and optionally a data payload. The GET request contains the following text:</div>
+
+<div>GET / HTTP/1.1</div>
+<div>Host: www.codecademy.com</div>
+
+<h3>What is HTTPS?</h3>
+<div>Since your HTTP request can be read by anyone at certain network junctures, it might not be a good idea to deliver information such as your credit card or password using this protocol. Fortunately, many servers support HTTPS, short for HTTP Secure, which allows you to encrypt data that you send and receive.</h3>
+
+<div>HTTPS is important to use when passing sensitive or personal information to and from websites. However, it is up to the businesses maintaining the servers to set it up. In order to support HTTPS, the business must apply for a certificate from a Certificate Authority.</h3>
 
 
 Forms
