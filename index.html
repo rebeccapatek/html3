@@ -1,6 +1,6 @@
 <h1>Tables</h1>
 
-<p>To display data in a table format, we must create the table to content the data using the &lt;table&lt; element.</p>
+<p>To display data in a table format, we must create the table to content the data using the &lt;table&gt; element.</p>
 
 <p>In html, the rows, columns, and cells that will hold data must be created individually.</p>
 
@@ -9,7 +9,7 @@
 
 <p>Adding rows won't actually add any cells with data to your table.  Each cell element must also be defined. In order to do this you must add a table data element. For each row, add as many table data elements as you would like for columns across.</p>
 
-<p>To add titles to rows and columns, you can use the table heading element: &lt;th&lt;.
+<p>To add titles to rows and columns, you can use the table heading element: &lt;th&gt;.
 These elements helps to describe what the data within the table represents.
 Just like table data, a table heading element must be placed within a table row.</p>
 
@@ -26,6 +26,20 @@ Just like table data, a table heading element must be placed within a table row.
 <div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;81&lt;/td&gt;</div>
 <div>&nbsp; &nbsp; &lt;/tr&gt;</div>
 <div>&lt;/table&gt;</div>
+<div>Would display this:</div>
+<table>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+      <th scope="row">Temperature</th>
+      <td>73</td>
+      <td>81</td>
+    </tr>
+  </table>
+
 
 
 
@@ -52,8 +66,8 @@ Just like table data, a table heading element must be placed within a table row.
 
 <p>You could also assign the rowspan attribute to a &lt;td&gt; with a value greater or equal to the  number or rows that you want the data to cover.</p>
 
-<p>For long tables, you can use the table body element &lt;tbody&lt; to section off all of the table's data, and exclude the table's headings.
-It makes sense to section off the table's column headings using the table head &lt;thead&lt; element as well when you are sectioning off the table' body.</p>
+<p>For long tables, you can use the table body element &lt;tbody&gt; to section off all of the table's data, and exclude the table's headings.
+It makes sense to section off the table's column headings using the table head &lt;thead&gt; element as well when you are sectioning off the table' body.</p>
 
 <p>The Table footer element (&lt;tfoot&gt;) is another way to section off a longer table.  Note that the footer element must still contain the table row element and any table data within that row.  Table footers are ofter used to contain sums, differences, and other data results.</p>
 
@@ -66,9 +80,10 @@ It makes sense to section off the table's column headings using the table head &
   <div>&nbsp;&nbsp;font-family: Arial, sans-serif;</div>
   <div>&nbsp;&nbsp;text-align: center;</div>
   <div>} </div>
+<hr>
 
 
-<h1>How Does the internet work?</h1>
+<h1>How Does the INTERNET work?</h1>
 
 <p>You can think of the internet as a network of computers which send and receive information.  Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming info.  
 HTTP stands for Hypertext Transfer Protocol and is used to structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network. Think of HTTP command language that the devices on both sides of the connection must follow in order to communicate.</p>
@@ -96,7 +111,7 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
 
 <p>HTTPS is important to use when passing sensitive or personal information to and from websites. However, it is up to the businesses maintaining the servers to set it up. In order to support HTTPS, the business must apply for a certificate from a Certificate Authority.</p>
 
-
+<hr>
 <h1>Forms</h1>
 <p>An HTML form element (&lt;form&lt;) is responsible for collecting information to send somewhere else. </p>
 
