@@ -1,45 +1,33 @@
 <h1>Tables</h1>
 
-<p>To display data in a table format, we must create the table to content the data using the &gt;table&lt; element.</p>
+<p>To display data in a table format, we must create the table to content the data using the &lt;table&lt; element.</p>
 
 <p>In html, the rows, columns, and cells that will hold data must be created individually.</p>
 
 <p>The first step in entering data into the table is to add rows using the table row element.</p>
-&gt;tr&lt;&gt;/tr&lt; for each one
+&lt;tr&gt;&lt;/tr&gt; for each one
 
 <p>Adding rows won't actually add any cells with data to your table.  Each cell element must also be defined. In order to do this you must add a table data element. For each row, add as many table data elements as you would like for columns across.</p>
 
-<p>To add titles to rows and columns, you can use the table heading element: &gt;th&lt;.
+<p>To add titles to rows and columns, you can use the table heading element: &lt;th&lt;.
 These elements helps to describe what the data within the table represents.
 Just like table data, a table heading element must be placed within a table row.</p>
 
 <p>This code:</p>
-<div>&gt;table&lt;</div>
-<div>&nbsp;&nbsp; &gt;tr&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th&lt;&gt;/th&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="col"&lt;Saturday&gt;/th&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="col"&lt;Sunday&gt;/th&lt;</div>
-<div>&nbsp; &nbsp; &gt;/tr&lt;</div>
-<div>&nbsp; &nbsp; &gt;tr&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="row"&lt;Temperature&gt;/th&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;td&lt;73&gt;/td&lt;</div>
-<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;td&lt;81&gt;/td&lt;</div>
-<div>&nbsp; &nbsp; &gt;/tr&lt;</div>
-<div>&gt;/table&lt;</div>
+<div>&lt;table&gt;</div>
+<div>&nbsp;&nbsp; &lt;tr&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt;&lt;/th&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;th scope="col"&gt;Saturday&lt;/th&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;th scope="col"&gt;Sunday&lt;/th&gt;</div>
+<div>&nbsp; &nbsp; &lt;/tr&gt;</div>
+<div>&nbsp; &nbsp; &lt;tr&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;th scope="row"&gt;Temperature&lt;/th&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;73&lt;/td&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;81&lt;/td&gt;</div>
+<div>&nbsp; &nbsp; &lt;/tr&gt;</div>
+<div>&lt;/table&gt;</div>
 
-<p>Would display this:</p>
-<table>
-    <tr>
-      <th></th>
-      <th scope="col">Saturday</th>
-      <th scope="col">Sunday</th>
-    </tr>
-    <tr>
-      <th scope="row">Temperature</th>
-      <td>73</td>
-      <td>81</td>
-    </tr>
-  </table>
+
 
 
 <p>Note that the first row has a blank heading, and a Saturday, Sunday heading.  The blank heading creates the extra table cell necessary to align the able headings correctly over the data that matches up with it. In the second row, the table heading Temperature was added.</p>
@@ -60,14 +48,14 @@ Just like table data, a table heading element must be placed within a table row.
 
 <p>would be stored in a <strong>style.css</strong> document.</p>
 
-<p>Another attribute of the &gt;td&lt; is the colspan. This attribute accepts an integer greater or equal to one to denote the number of columns it spans across.</p> 
+<p>Another attribute of the &lt;td&gt; is the colspan. This attribute accepts an integer greater or equal to one to denote the number of columns it spans across.</p> 
 
-<p>You could also assign the rowspan attribute to a &gt;td&lt; with a value greater or equal to the  number or rows that you want the data to cover.</p>
+<p>You could also assign the rowspan attribute to a &lt;td&gt; with a value greater or equal to the  number or rows that you want the data to cover.</p>
 
-<p>For long tables, you can use the table body element &gt;tbody&lt; to section off all of the table's data, and exclude the table's headings.
-It makes sense to section off the table's column headings using the table head &gt;thead&lt; element as well when you are sectioning off the table' body.</p>
+<p>For long tables, you can use the table body element &lt;tbody&lt; to section off all of the table's data, and exclude the table's headings.
+It makes sense to section off the table's column headings using the table head &lt;thead&lt; element as well when you are sectioning off the table' body.</p>
 
-<p>The Table footer element (&gt;tfoot&lt;) is another way to section off a longer table.  Note that the footer element must still contain the table row element and any table data within that row.  Table footers are ofter used to contain sums, differences, and other data results.</p>
+<p>The Table footer element (&lt;tfoot&gt;) is another way to section off a longer table.  Note that the footer element must still contain the table row element and any table data within that row.  Table footers are ofter used to contain sums, differences, and other data results.</p>
 
 <p>Tables by default are very blank.  They have no borders, the font color is black, and the typeface is the same type used for other HTML elements.</p>    
 
@@ -82,46 +70,47 @@ It makes sense to section off the table's column headings using the table head &
 
 <h1>How Does the internet work?</h1>
 
-<div>You can think of the internet as a network of computers which send and receive information.  Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming info.  
-HTTP stands for Hypertext Transfer Protocol and is used to structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network. Think of HTTP command language that the devices on both sides of the connection must follow in order to communicate.</div>
+<p>You can think of the internet as a network of computers which send and receive information.  Computers need an HTTP request to know how to communicate. The HTTP request instructs the receiving computer how to handle the incoming info.  
+HTTP stands for Hypertext Transfer Protocol and is used to structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network. Think of HTTP command language that the devices on both sides of the connection must follow in order to communicate.</p>
 
-<div>The transfer of resources happens using TCP (Transmission Control Protocol). In viewing this webpage, TCP manages the channels between your browser and the server. TCP is used to manage many types of internet connections in which one computer or device wants to send something to another.</div>
+<p>The transfer of resources happens using TCP (Transmission Control Protocol). In viewing this webpage, TCP manages the channels between your browser and the server. TCP is used to manage many types of internet connections in which one computer or device wants to send something to another.</p>
 
 <h4>HTTP & TCP: How it Works</h4>
-<div>When you type an address into your browser, you are commanding it to open a TCP channel to the server that responds to that URL (or Uniform Resource Locator). A URL is like your home address or phone number because it describes how to reach you.
+<p>When you type an address into your browser, you are commanding it to open a TCP channel to the server that responds to that URL (or Uniform Resource Locator). A URL is like your home address or phone number because it describes how to reach you.</p>
 
-<div>In this situation, your computer, which is making the request, is called the client. The URL you are requesting is the address that belongs to the server.</div>
+<p>In this situation, your computer, which is making the request, is called the client. The URL you are requesting is the address that belongs to the server.</p>
 
-<div>Once the TCP connection is established, the client sends a HTTP GET request to the server to retrieve the webpage it should display. After the server has sent the response, it closes the TCP connection. If you open the website in your browser again, or if your browser automatically requests something from the server, a new connection is opened which follows the same process described above. GET requests are one kind of HTTP method a client can call. </div>
+<p>Once the TCP connection is established, the client sends a HTTP GET request to the server to retrieve the webpage it should display. After the server has sent the response, it closes the TCP connection. If you open the website in your browser again, or if your browser automatically requests something from the server, a new connection is opened which follows the same process described above. GET requests are one kind of HTTP method a client can call. </p>
 
-<div>Let’s explore an example of how GET requests (the most common type of request) are used to help your computer (the client) access resources on the web.</div>
+<p>Let’s explore an example of how GET requests (the most common type of request) are used to help your computer (the client) access resources on the web.</p>
 
-<div>Suppose you want to check out the latest course offerings from http://codecademy.com. After you type the URL into your browser, your browser will extract the http part and recognize that it is the name of the network protocol to use. Then, it takes the domain name from the URL, in this case “codecademy.com”, and asks the internet Domain Name Server to return an Internet Protocol (IP) address.</div>
+<p>Suppose you want to check out the latest course offerings from http://codecademy.com. After you type the URL into your browser, your browser will extract the http part and recognize that it is the name of the network protocol to use. Then, it takes the domain name from the URL, in this case “codecademy.com”, and asks the internet Domain Name Server to return an Internet Protocol (IP) address.</p>
 
-<div>Now the client knows the destination’s IP address. It then opens a connection to the server at that address, using the http protocol as specified. It will initiate a GET request to the server which contains the IP address of the host and optionally a data payload. The GET request contains the following text:</div>
+<p>Now the client knows the destination’s IP address. It then opens a connection to the server at that address, using the http protocol as specified. It will initiate a GET request to the server which contains the IP address of the host and optionally a data payload. The GET request contains the following text:</p>
 
-<div>GET / HTTP/1.1</div>
-<div>Host: www.codecademy.com</div>
+<p>GET / HTTP/1.1</p>
+<p>Host: www.codecademy.com</p>
 
 <h3>What is HTTPS?</h3>
-<div>Since your HTTP request can be read by anyone at certain network junctures, it might not be a good idea to deliver information such as your credit card or password using this protocol. Fortunately, many servers support HTTPS, short for HTTP Secure, which allows you to encrypt data that you send and receive.</h3>
+<p>Since your HTTP request can be read by anyone at certain network junctures, it might not be a good idea to deliver information such as your credit card or password using this protocol. Fortunately, many servers support HTTPS, short for HTTP Secure, which allows you to encrypt data that you send and receive.</p>
 
-<div>HTTPS is important to use when passing sensitive or personal information to and from websites. However, it is up to the businesses maintaining the servers to set it up. In order to support HTTPS, the business must apply for a certificate from a Certificate Authority.</h3>
+<p>HTTPS is important to use when passing sensitive or personal information to and from websites. However, it is up to the businesses maintaining the servers to set it up. In order to support HTTPS, the business must apply for a certificate from a Certificate Authority.</p>
 
 
-Forms
-An HTML form element (&gt;form&lt;) is responsible for collecting information to send somewhere else. 
+<h1>Forms</h1>
+<p>An HTML form element (&lt;form&lt;) is responsible for collecting information to send somewhere else. </p>
 
-Example:
-&gt;form action="/example.html" method="POST"&lt;
-&gt;/form&lt;
-In the above example, we’ve created the skeleton for a &gt;form&lt; that will send information to example.html as a POST request:
+<p>Example:</p>
+<p>&lt;form action="/example.html" method="POST"&gt;
+&lt;/form&gt;</p>
+<p>In the above example, we’ve created the skeleton for a &lt;form&gt; that will send information to example.html as a POST request:</p>
 
-The action attribute determines where the information is sent.
-The method attribute is assigned a HTTP verb that is included in the HTTP request.
+<p>The action attribute determines where the information is sent.</p>
+<p><The method attribute is assigned a HTTP verb that is included in the HTTP request.</p>
+<hr>
 
 Things that I learned:
-&gt;hr&lt; is a horizontal rule element.  It defines a thematic break in an HTML page. This is what is creating the small lines between sections on this page.
+&lt;hr&gt; is a horizontal rule element.  It defines a thematic break in an HTML page. This is what is creating the small lines between sections on this page.
 
 
 
