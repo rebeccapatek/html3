@@ -1,33 +1,45 @@
-Tables
+<h1>Tables</h1>
 
-To display data in a table format, we must create the table to content the data using the &gt;table&lt; element.
+<p>To display data in a table format, we must create the table to content the data using the &gt;table&lt; element.</p>
 
-In html, the rows, columns, and cells that will hold data must be created individually.
+<p>In html, the rows, columns, and cells that will hold data must be created individually.</p>
 
-The first step in entering data into the table is to add rows using the table row element.
+<p>The first step in entering data into the table is to add rows using the table row element.</p>
 &gt;tr&lt;&gt;/tr&lt; for each one
 
-Adding rows won't actually add any cells with data to your table.  Each cell element must also be defined. In order to do this you must add a table data element. For each row, add as many table data elements as you would like for columns across.
+<p>Adding rows won't actually add any cells with data to your table.  Each cell element must also be defined. In order to do this you must add a table data element. For each row, add as many table data elements as you would like for columns across.</p>
 
-To add titles to rows and columns, you can use the table heading element: &gt;th&lt;.
+<p>To add titles to rows and columns, you can use the table heading element: &gt;th&lt;.
 These elements helps to describe what the data within the table represents.
-Just like table data, a table heading element must be placed within a table row. 
+Just like table data, a table heading element must be placed within a table row.</p>
 
-This code:
-&gt;table&lt;
-  &gt;tr&lt;
-    &gt;th&lt;&gt;/th&lt;
-    &gt;th scope="col"&lt;Saturday&gt;/th&lt;
-    &gt;th scope="col"&lt;Sunday&gt;/th&lt;
-  &gt;/tr&lt;
-  &gt;tr&lt;
-    &gt;th scope="row"&lt;Temperature&gt;/th&lt;
-    &gt;td&lt;73&gt;/td&lt;
-    &gt;td&lt;81&gt;/td&lt;
-  &gt;/tr&lt;
-&gt;/table&lt;
+<p>This code:</p>
+<div>&gt;table&lt;</div>
+<div>&nbsp;&nbsp; &gt;tr&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th&lt;&gt;/th&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="col"&lt;Saturday&gt;/th&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="col"&lt;Sunday&gt;/th&lt;</div>
+<div>&nbsp; &nbsp; &gt;/tr&lt;</div>
+<div>&nbsp; &nbsp; &gt;tr&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;th scope="row"&lt;Temperature&gt;/th&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;td&lt;73&gt;/td&lt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &gt;td&lt;81&gt;/td&lt;</div>
+<div>&nbsp; &nbsp; &gt;/tr&lt;</div>
+<div>&gt;/table&lt;</div>
 
-Would display this:
+<p>Would display this:</p>
+<table>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+      <th scope="row">Temperature</th>
+      <td>73</td>
+      <td>81</td>
+    </tr>
+  </table>
 
 
 Note that the first row has a blank heading, and a Saturday, Sunday heading.  The blank heading creates the extra table cell necessary to align the able headings correctly over the data that matches up with it. In the second row, the table heading Temperature was added.
