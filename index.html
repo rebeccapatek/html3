@@ -122,6 +122,37 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
 
 <p>The action attribute determines where the information is sent.</p>
 <p>The method attribute is assigned a HTTP verb that is included in the HTTP request.</p>
+<h3>Let's first explore a text value for the type attribute. </h3>
+<p>&lt;form action="/example.html" method="POST"&gt;
+  &lt;input type="text name="first-text-field"&gt;</p>
+<p>It is also important that we include a name attribute otherwise the information typed in the input field won't be sent when the form is submitted.</p>
+<p>When initially loaded it would be an empty box. </p>
+<p>Let's say the user typed the words, "important details" into the text box.
+  Then when the form is submitted:</p>
+<p>"first-text-field"=important details" would be sent to /example.html because the value of the name attribute is "first-text-field" and the value of value is "important details"</p>
+<p>The label element is so that the user can identify what the text field is for. It will display what text is written between the opening and closing tags.  To associate a label element with its corresponding input field, the input needs an id attribute and the label needs a matching for attribute. </p>
+<p>&lt;label for="meal"&gt;What do you want to eat?&lt;/label&gt;
+  &lt;br&gt;
+  &lt;input type="text" name="food" id="meal"&gt; </p>
+  <label for="meal">What do you want to eat?</label>
+  <br>
+  <input type="text" name="food" id="meal"> 
+<h3>Let's explore the password value for the type attribute</h3>
+<p>An &lt;input type ="password"&gt; will replace input text with asterisk or dots
+  Here is an example of how to create a password field:</p>
+<p>&lt;form&gt;</p>
+<p>&lt;label for="user-password"&gt;Password: &lt;/label&gt;</p>
+<p>&lt;input type="password" id="user-password" name="user-password"&gt;</p>
+<p>&lt;/form&gt;</p>
+<div>
+  <form>
+    <label for="user-password">Password: </label>
+    <input type="password" id="user-password" name="user-password">
+  </form>
+
+</div>
+<p>Even thought the field obscures the text, when the form is submitted
+  "user-password=hunter2" is sent along with the other information in the form.</p>
 <hr>
 
 <h2>Things that I learned:</h2>
