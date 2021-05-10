@@ -174,6 +174,17 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
 <p>If we presented multiple options to users and allow them to select any number of options then we would need a checkbox for the type attribute of an input element.</p>
 <p>You need to create labels for each of the checkboxes, otherwise the user would just see boxes.</p>
 <p>The id attribute of the checkbox is what pairs it with the label.  The name attribute is what gives it a value.  The value attribute is what the value is set equal to.  So the name attribute could be the same for several different checkboxes. Have the same name attribute will group these inputs together.</p>
+<form>
+  <div><strong>What is your favorite part about going to Nashville Software School?</strong></div>
+  <label for="friends">Making New Friends</label>
+  <input id="friends" name="bestpart" type="checkbox" value="NewFriends">
+  <br>
+  <label for="neighborhood">Location Of School In Proximity to Dozen</label>
+  <input id="neighborhood" name="bestpart" type="checkbox" value="GreatHood">
+  <br>
+  <label for="learning">Learning New Things</label>
+  <input id="learning" name="bestpart" type="checkbox" value="NewThings">
+</form>
 <h3>The Radio Input.</h3>
 <p>Checkboxes work well if we want to present users with multiple options and let them choose one or more of the options. However, there are cases where we want to present multiple options and only allow for one selection — in these cases we need to use the radio input option.</p>
 <p>Very much like the checkboxes, we need to also include label elements for the user to know what they are choosing.</p>
