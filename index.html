@@ -201,15 +201,42 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
 <h3>Dropdown lists</h3>
 <p>Allows our users to choose one option from an organized list.</p>
 <p>You would use a select element (opening and closing tags) and within the select element you would have option elements (with closing tags) for each of the items you'd like displayed in the dropdown.</p>
-<p>Each option has a value attribute.  The value is set equal to the name of  the select. 
+<p>Each option has a value attribute.  The value is set equal to the name of the select. 
 
 </p>
+<form>
+  <label for="city">What's your favorite city you've ever lived in?</label>
+  <select id="city" name="city">
+    <option value="Minneapolis">Minneapolis</option>
+    <option value="Austin">Austin</option>
+    <option value="Nashville">Nashville</option>
+  </select>
+</form>
 <h3>Datalists</h3>
 <p>They are nested within an input type of text. The inputs with type of text also needs to have a list attribute whose value matches the id attribute of the datalist.  Users can type into the text field and filter options from the datalist. If non of the options match what the user types, the user can still submit what they've typed in. When the form is submitted, the value that the user typed in or selected is submitted paired with the name of the input field.</p>
 <p>You need to have an option element nested under the datalist element.  The value of these options are what will display when you are searching </p>
+<form>
+  <label for="vacation">Where have you always wanted to take a vacation?</label>
+  <input type="text" id="vacation" list="places" name="vacation">
+    <datalist id="places">
+      <option value="Paris"></option>
+      <option value="Prague"></option>
+      <option value="Tulum"></option>
+      <option value="New York City"></option>
+      <option value="Taos"></option>
+
+    </datalist>
+</form>
 <h3>Text Area</h3>
-<p>While an input element with the type="text creates a single row inout field for users to type in info, the texture allows for the users to write more information.</p>
+<p>While an input element with the type="text" creates a single row input field for users to type in info, the texture allows for the users to write more information.</p>
 <p>We can add the attribute rows and cols for the size of the text area.</p>
+<form>
+  <label for="feels"><strong>Tell me how you feel after looking through this 90s site with no styling</strong></label>
+<br>
+  <textarea id="feels" rows="7" cols="40">
+
+  </textarea>
+</form>
 <h3>Submitting A Form</h3>
 <p>Within the form element, use an input element with a type="submit" to make a button to submit the form.  You can also give this input a value attribute.  Its value will be what is printed on the button, or without this attribute, by default, it will read submit.</p>
 <h2>Things that I learned:</h2>
