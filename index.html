@@ -149,7 +149,9 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
     <label for="user-password">Password: </label>
     <input type="password" id="user-password" name="user-password">
   </form>
-
+  <form>
+    <label for="user-password">Password: </label>
+    <input type="password" id="user-password" name="user-password">
 </div>
 <p>Even thought the field obscures the text, when the form is submitted
   "user-password=hunter2" is sent along with the other information in the form.</p>
@@ -160,6 +162,14 @@ HTTP stands for Hypertext Transfer Protocol and is used to structure requests an
   <strong>Just numbers and +, -, and .</strong>
   </p>
 <p>A step attribute equal to 1 creates arrows inside the input field to increase or decrease the number by 1.</p>
+<form>
+  <label for="months">How many months have you been coding?(this has no step attribute so it defaults to one)</label>
+  <input type="number" id="months" name="lengthinmonths">
+</form>
+<form>
+  <label for="months2">How many months have you been coding? (this has a step attribute of 0.5)</label>
+  <input type="number" id="months2" name="lengthinmonths" step="0.5">
+</form>
 <h3>Let's explore the Checkbox Input</h3>
 <p>If we presented multiple options to users and allow them to select any number of options then we would need a checkbox for the type attribute of an input element.</p>
 <p>You need to create labels for each of the checkboxes, otherwise the user would just see boxes.</p>
